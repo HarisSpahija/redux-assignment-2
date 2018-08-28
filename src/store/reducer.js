@@ -10,8 +10,8 @@ const reducer = (state = initialState, action) => {
 
         const newPerson = {
             id: Math.random(),
-            name: 'Max',
-            age: Math.floor( Math.random() * 40)
+            name: action.personData.name,
+            age: action.personData.age
         }
         return {
                 ...state,
